@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)sliderChanged:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *USslider;
 @property (weak, nonatomic) IBOutlet UISlider *WorldSlider;
 @property (weak, nonatomic) IBOutlet UISlider *BusinessSlider;
