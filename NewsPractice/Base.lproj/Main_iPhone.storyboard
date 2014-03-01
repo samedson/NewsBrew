@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-kS-UK9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffee_beans.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-kS-UK9">
                                 <rect key="frame" x="-7" y="0.0" width="327" height="586"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -174,7 +174,7 @@
                     </view>
                     <connections>
                         <outlet property="BusinessSlider" destination="Kch-vr-O7e" id="t8y-dZ-fn4"/>
-                        <outlet property="Entertainment" destination="6lQ-Qm-3fD" id="dAc-Mm-HLx"/>
+                        <outlet property="EntertainmentSlider" destination="6lQ-Qm-3fD" id="Xum-l2-3DT"/>
                         <outlet property="HealthSlider" destination="RXT-d5-lmu" id="t9g-eL-OM3"/>
                         <outlet property="ScienceSlider" destination="b2d-YF-oYX" id="5V0-wv-ESz"/>
                         <outlet property="Sports" destination="MJK-bp-Vde" id="iOk-Un-9Qa"/>
@@ -190,7 +190,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dark.jpg" width="1280" height="1024"/>
+        <image name="coffee_beans.jpg" width="1280" height="1024"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
