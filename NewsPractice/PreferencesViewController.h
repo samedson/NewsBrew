@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PreferencesViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISlider *USslider;
 @property (weak, nonatomic) IBOutlet UISlider *WorldSlider;
 @property (weak, nonatomic) IBOutlet UISlider *BusinessSlider;
@@ -18,4 +18,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *EntertainmentSlider;
 @property (weak, nonatomic) IBOutlet UISlider *HealthSlider;
 @property (weak, nonatomic) IBOutlet UISlider *TimeSlider;
+
+- (IBAction)brew:(id)sender;
+
+
 @end
