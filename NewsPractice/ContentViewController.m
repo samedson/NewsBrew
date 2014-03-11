@@ -11,7 +11,7 @@
 @implementation ContentViewController
 
 - (void)viewDidLoad {
-    self.articles = [[NSArray alloc] initWithObjects:@"poop", nil];
+    self.articles = [[NSArray alloc] initWithObjects:@"Cat stuck in tree", @"Dog stuck in tree", nil];
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     [self.tableView reloadData];

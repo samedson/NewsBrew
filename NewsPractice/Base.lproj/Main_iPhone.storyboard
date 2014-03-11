@@ -198,7 +198,6 @@
         <!--Content View Controller-->
         <scene sceneID="g3r-ou-ExU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n1e-vn-EwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="sVa-fY-5DC" customClass="ContentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="97f-6m-MYW"/>
@@ -250,6 +249,7 @@
                         <outlet property="tableView" destination="nEN-cv-xet" id="Apd-BG-TnJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1e-vn-EwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1131" y="43"/>
         </scene>
