@@ -9,6 +9,7 @@
 #import "PreferencesViewController.h"
 
 @interface PreferencesViewController ()
+
 @property (nonatomic) NSInteger totalSlider;
 @property (nonatomic) NSInteger numArticles;
 
@@ -20,6 +21,7 @@
 @property (nonatomic) NSInteger numSports;
 @property (nonatomic) NSInteger numEntertainment;
 @property (nonatomic) NSInteger numHealth;
+
 @end
 
 
@@ -38,12 +40,19 @@
     self.numSports=0;
     self.numEntertainment=0;
     self.numHealth=0;
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     UINavigationBar *navBar = self.navigationController.navigationBar;
     [navBar setBackgroundImage:[UIImage new]
                  forBarMetrics:UIBarMetricsDefault];
     navBar.shadowImage = [UIImage new];
     navBar.translucent = YES;
+    navBar.backgroundColor = [UIColor clearColor];
+    
+    [self sumSliders];
+    [self sumArticles];
+    [self setNums];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,20 +74,14 @@
 - (void)setNums
 {
     self.numUS = round (self.numArticles * self.USslider.value / (self.totalSlider + 0.0));
-    
     self.numWorld = round (self.numArticles * self.WorldSlider.value / (self.totalSlider + 0.0));
-    
     self.numBusiness = round (self.numArticles * self.BusinessSlider.value / (self.totalSlider + 0.0));
-    
     self.numTech = round (self.numArticles * self.TechSlider.value / (self.totalSlider + 0.0));
-    
     self.numScience = round (self.numArticles * self.ScienceSlider.value / (self.totalSlider + 0.0));
-    
     self.numSports = round (self.numArticles * self.Sports.value / (self.totalSlider + 0.0));
-    
     self.numEntertainment = round (self.numArticles * self.EntertainmentSlider.value / (self.totalSlider + 0.0));
-    
     self.numHealth = round (self.numArticles * self.HealthSlider.value / (self.totalSlider + 0.0));
+    
     /*
      if (self.numEntertainment+self.numBusiness+self.numHealth+self.numScience+self.numSports+self.numTech+self.numUS+self.numWorld > self.numArticles) {
      //TBD
@@ -88,13 +91,10 @@
      }*/
 }
 
-
 - (IBAction)sliderChanged:(id)sender {
     [self sumSliders];
     [self sumArticles];
     [self setNums];
-    
-    
     
     NSLog(@"Number of US Politics Stories %ld", (long)self.numUS);
     NSLog(@"Number of World Politics Stories %ld", (long)self.numWorld);
@@ -105,15 +105,31 @@
     NSLog(@"Number of Entertainment Stories %ld", (long)self.numEntertainment);
     NSLog(@"Number of Health Stories %ld", (long)self.numHealth);
     
-}
+    NSLog(@"Number of Total Stories %ld", (long)self.numArticles);
 
+    
+}
 
 - (IBAction)brew:(id)sender {
     [self performSegueWithIdentifier:@"ContentSegue" sender:self];
-
-
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"ContentSegue"]){
+        ContentViewController *controller = (ContentViewController *)segue.destinationViewController;
+        controller.preferences = @[
+                                   [NSNumber numberWithInteger:_numUS],
+                                   [NSNumber numberWithInteger:_numWorld],
+                                   [NSNumber numberWithInteger:_numBusiness],
+                                   [NSNumber numberWithInteger:_numTech],
+                                   [NSNumber numberWithInteger:_numScience],
+                                   [NSNumber numberWithInteger:_numSports],
+                                   [NSNumber numberWithInteger:_numEntertainment],
+                                   [NSNumber numberWithInteger:_numHealth],
+                                   [NSNumber numberWithInteger:_numArticles]
+                                   ];
+    }
+}
 
 
 @end

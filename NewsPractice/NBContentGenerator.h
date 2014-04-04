@@ -8,22 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NBContentGenerator : NSObject {
-    // 1 >>>>>> PRIVATE
-    
-    NSDictionary *preferences;
+#import "MWFeedParser.h"
 
-}   // >>>>>> 1
+#import "NBParser.h"
 
+@interface NBContentGenerator : NSObject
 
-// 2 >>>>>> PROPERTIES
-@property (strong, nonatomic) NSDictionary *preferences;
+- (id)initWithRSSURLs:(NSArray *)RSSURLs preferences:(NSArray *)preferences;
+- (void)beginWhenParsingFinishes;
 
+@property (strong, nonatomic) NSArray *preferences;
+@property (strong, nonatomic) NSArray *parsers;
+@property (strong, nonatomic) NSMutableArray *articles;
 
-// >>>>>> 2
-
-// PUBLIC METHODS
-+ (id)sharedInstance;
-
+@property (retain, nonatomic) NBParser *USParser;
+@property (retain, nonatomic) NBParser *WorldParser;
+@property (retain, nonatomic) NBParser *BusinessParser;
+@property (retain, nonatomic) NBParser *TechParser;
+@property (retain, nonatomic) NBParser *ScienceParser;
+@property (retain, nonatomic) NBParser *SportsParser;
+@property (retain, nonatomic) NBParser *EntertainmentParser;
+@property (retain, nonatomic) NBParser *HealthParser;
 
 @end

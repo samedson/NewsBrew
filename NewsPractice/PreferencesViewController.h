@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ContentViewController.h"
+
 @interface PreferencesViewController : UIViewController
 - (IBAction)sliderChanged:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *USslider;

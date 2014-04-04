@@ -34,6 +34,9 @@
 		A69A7F1D18AB1C48002373A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69A7EFC18AB1C48002373A6 /* UIKit.framework */; };
 		A69A7F2518AB1C48002373A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A69A7F2318AB1C48002373A6 /* InfoPlist.strings */; };
 		A69A7F2718AB1C48002373A6 /* NewsPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A69A7F2618AB1C48002373A6 /* NewsPracticeTests.m */; };
+		DF9A675D18EF250E00715561 /* NBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A675C18EF250E00715561 /* NBParser.m */; };
+		DF9A676918EF39F300715561 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A676718EF39F300715561 /* ArticleViewController.m */; };
+		DF9A676A18EF39F300715561 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF9A676818EF39F300715561 /* ArticleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,11 @@
 		A69A7F2218AB1C48002373A6 /* NewsBrewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsBrewTests-Info.plist"; sourceTree = "<group>"; };
 		A69A7F2418AB1C48002373A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A69A7F2618AB1C48002373A6 /* NewsPracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsPracticeTests.m; sourceTree = "<group>"; };
+		DF9A675B18EF250E00715561 /* NBParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBParser.h; sourceTree = "<group>"; };
+		DF9A675C18EF250E00715561 /* NBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBParser.m; sourceTree = "<group>"; };
+		DF9A676618EF39F300715561 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		DF9A676718EF39F300715561 /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		DF9A676818EF39F300715561 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A69A7F0A18AB1C48002373A6 /* Main_iPhone.storyboard */,
+				DF9A676818EF39F300715561 /* ArticleViewController.xib */,
 				A69A7F0D18AB1C48002373A6 /* Main_iPad.storyboard */,
 				A69A7F0718AB1C48002373A6 /* AppDelegate.h */,
 				A69A7F0818AB1C48002373A6 /* AppDelegate.m */,
@@ -192,11 +201,15 @@
 				A69A7F1118AB1C48002373A6 /* PreferencesViewController.m */,
 				228605BD18C29235002EB918 /* ContentViewController.h */,
 				228605BE18C29235002EB918 /* ContentViewController.m */,
+				DF9A676618EF39F300715561 /* ArticleViewController.h */,
+				DF9A676718EF39F300715561 /* ArticleViewController.m */,
 				A69A7F1318AB1C48002373A6 /* Images.xcassets */,
 				2286059418C28C3A002EB918 /* Resources */,
 				A69A7EFF18AB1C48002373A6 /* Supporting Files */,
 				228605B718C290BE002EB918 /* NBContentGenerator.h */,
 				228605B818C290BE002EB918 /* NBContentGenerator.m */,
+				DF9A675B18EF250E00715561 /* NBParser.h */,
+				DF9A675C18EF250E00715561 /* NBParser.m */,
 				228605BA18C290DF002EB918 /* NBTableViewCell.h */,
 				228605BB18C290DF002EB918 /* NBTableViewCell.m */,
 			);
@@ -311,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69A7F0F18AB1C48002373A6 /* Main_iPad.storyboard in Resources */,
+				DF9A676A18EF39F300715561 /* ArticleViewController.xib in Resources */,
 				A69A7F1418AB1C48002373A6 /* Images.xcassets in Resources */,
 				2286059618C28C48002EB918 /* coffee_beans.jpg in Resources */,
 				A69A7F0C18AB1C48002373A6 /* Main_iPhone.storyboard in Resources */,
@@ -336,7 +350,9 @@
 				228605BC18C290DF002EB918 /* NBTableViewCell.m in Sources */,
 				A69A7F1218AB1C48002373A6 /* PreferencesViewController.m in Sources */,
 				228605B018C29050002EB918 /* MWFeedItem.m in Sources */,
+				DF9A675D18EF250E00715561 /* NBParser.m in Sources */,
 				228605B918C290BE002EB918 /* NBContentGenerator.m in Sources */,
+				DF9A676918EF39F300715561 /* ArticleViewController.m in Sources */,
 				228605B418C29050002EB918 /* NSString+HTML.m in Sources */,
 				228605AE18C29050002EB918 /* GTMNSString+HTML.m in Sources */,
 				228605B318C29050002EB918 /* NSDate+InternetDateTime.m in Sources */,
