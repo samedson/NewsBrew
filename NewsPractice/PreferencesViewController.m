@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.totalSlider=0;
+    self.totalSlider=0;
     self.numArticles=0;
     self.numUS=0;
     self.numWorld=0;
@@ -108,8 +108,12 @@
 }
 
 
-
 - (IBAction)brew:(id)sender {
     [self performSegueWithIdentifier:@"ContentSegue" sender:self];
+
+
 }
+
+
+
 @end

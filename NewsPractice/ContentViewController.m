@@ -15,6 +15,8 @@
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     [self.tableView reloadData];
+  
+  
 }
 
 - (void)viewDidAppear:(BOOL)animated {
