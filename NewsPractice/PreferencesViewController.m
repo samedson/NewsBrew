@@ -107,7 +107,6 @@
     
     NSLog(@"Number of Total Stories %ld", (long)self.numArticles);
 
-    
 }
 
 - (IBAction)brew:(id)sender {

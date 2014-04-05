@@ -91,7 +91,7 @@ NSString *kHealthURL = @"https://news.google.com/news/feeds?pz=1&cf=all&ned=us&h
 
     switch ([article.identifier intValue]) {
         case 0:
-            cell.topicLabel.text = @"US Politics";
+            cell.topicLabel.text = @"U.S.";
             break;
         case 1:
             cell.topicLabel.text = @"World";

@@ -64,7 +64,10 @@
 
 - (NSString *)formatSummary:(NSString *)summary {
     NSArray *strings = [summary componentsSeparatedByString:@"<font size=\"-1\">"];
-    return [strings[2] componentsSeparatedByString:@"&nbsp"][0];
+    NSString *str = [[strings[2] componentsSeparatedByString:@"&nbsp"][0]
+                    stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"];
+    str = [str stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
+    return str;
 }
 
 @end
