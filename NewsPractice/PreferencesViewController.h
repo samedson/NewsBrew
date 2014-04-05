@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *EntertainmentSlider;
 @property (weak, nonatomic) IBOutlet UISlider *HealthSlider;
 @property (weak, nonatomic) IBOutlet UISlider *TimeSlider;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ActivityDial;
 
 - (IBAction)brew:(id)sender;
 
