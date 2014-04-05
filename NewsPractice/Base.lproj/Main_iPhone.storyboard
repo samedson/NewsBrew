@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xO-ME-FtL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xO-ME-FtL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Preferences View Controller-->
@@ -34,7 +34,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-RM-AKj">
-                                <rect key="frame" x="132" y="133" width="156" height="31"/>
+                                <rect key="frame" x="132" y="141" width="156" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kch-vr-O7e">
-                                <rect key="frame" x="132" y="174" width="156" height="31"/>
+                                <rect key="frame" x="132" y="191" width="156" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5N6-uN-nep">
-                                <rect key="frame" x="132" y="215" width="157" height="31"/>
+                                <rect key="frame" x="132" y="241" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,7 +67,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-YF-oYX">
-                                <rect key="frame" x="132" y="256" width="157" height="31"/>
+                                <rect key="frame" x="132" y="295" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-bp-Vde">
-                                <rect key="frame" x="132" y="297" width="156" height="31"/>
+                                <rect key="frame" x="132" y="351" width="156" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6lQ-Qm-3fD">
-                                <rect key="frame" x="132" y="338" width="157" height="31"/>
+                                <rect key="frame" x="132" y="404" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,7 +100,7 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RXT-d5-lmu">
-                                <rect key="frame" x="132" y="379" width="157" height="31"/>
+                                <rect key="frame" x="132" y="459" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,91 +110,59 @@
                                     <action selector="sliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Irt-6J-0YQ"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D8V-fm-7fh">
-                                <rect key="frame" x="40" y="468" width="240" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="minimumTrackTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="maximumTrackTintColor" red="0.26080197700000002" green="0.1754749008" blue="0.089498394770000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.26080197704081631" green="0.17547490083958109" blue="0.089498394765454001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="sliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="SL5-ch-cEt"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="U.S." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCd-cj-0a6">
-                                <rect key="frame" x="27" y="98" width="94" height="21"/>
+                                <rect key="frame" x="18" y="97" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hu-Kw-Vx7">
-                                <rect key="frame" x="27" y="180" width="70" height="21"/>
+                                <rect key="frame" x="18" y="199" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Technology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Q-9Q-mdt">
-                                <rect key="frame" x="27" y="221" width="88" height="21"/>
+                                <rect key="frame" x="18" y="249" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Science" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-4X-nTq">
-                                <rect key="frame" x="27" y="262" width="62" height="21"/>
+                                <rect key="frame" x="18" y="303" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sports" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZl-cu-IzY">
-                                <rect key="frame" x="27" y="303" width="51" height="21"/>
+                                <rect key="frame" x="18" y="359" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entertainment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRX-3W-4BI">
-                                <rect key="frame" x="27" y="344" width="108" height="21"/>
+                                <rect key="frame" x="18" y="412" width="108" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-Mc-Q5b">
-                                <rect key="frame" x="27" y="385" width="50" height="21"/>
+                                <rect key="frame" x="18" y="467" width="50" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDE-vp-WqM">
-                                <rect key="frame" x="27" y="139" width="105" height="21"/>
+                                <rect key="frame" x="18" y="149" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t5-vJ-adY">
-                                <rect key="frame" x="46" y="460" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reading Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsG-sM-IOS">
-                                <rect key="frame" x="27" y="430" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-nt-la0">
-                                <rect key="frame" x="244" y="460" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -250,7 +218,6 @@
                         <outlet property="ScienceSlider" destination="b2d-YF-oYX" id="5V0-wv-ESz"/>
                         <outlet property="Sports" destination="MJK-bp-Vde" id="iOk-Un-9Qa"/>
                         <outlet property="TechSlider" destination="5N6-uN-nep" id="VJE-kG-kNr"/>
-                        <outlet property="TimeSlider" destination="D8V-fm-7fh" id="7QV-Ld-fYI"/>
                         <outlet property="USslider" destination="v1o-DZ-ZP2" id="DKA-2m-PWu"/>
                         <outlet property="WorldSlider" destination="Iri-RM-AKj" id="b0a-0R-e8L"/>
                     </connections>
