@@ -40,16 +40,33 @@
     self.numSports=0;
     self.numEntertainment=0;
     self.numHealth=0;
+  
+  _activity_background = [[UIView alloc] init];
+  _activity_background.frame = CGRectMake(0, 0, 50, 50);
+  _activity_background.center = self.view.center;
+  _activity_background.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+  _activity_background.layer.cornerRadius = 5;
+  _activity_background.layer.masksToBounds = YES;
+  
+  _activityView = [[UIActivityIndicatorView alloc]     initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+  _activityView.center = self.view.center;
+  
+  [self.view addSubview:_activity_background];
+  [self.view addSubview:_activityView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     UINavigationBar *navBar = self.navigationController.navigationBar;
     [navBar setBackgroundImage:[UIImage new]
                  forBarMetrics:UIBarMetricsDefault];
+  
     navBar.shadowImage = [UIImage new];
     navBar.translucent = YES;
     navBar.backgroundColor = [UIColor clearColor];
-    
+  
+  [_activity_background setBackgroundColor:[UIColor clearColor]];
+  [_activityView stopAnimating];
+  
     [self sumSliders];
     [self sumArticles];
     [self setNums];
@@ -110,6 +127,7 @@
 }
 
 - (IBAction)brew:(id)sender {
+    [self performSelectorInBackground:@selector(showActivityIndicator) withObject:nil];
     [self performSegueWithIdentifier:@"ContentSegue" sender:self];
 }
 
@@ -130,5 +148,9 @@
     }
 }
 
+- (void)showActivityIndicator {
+  _activity_background.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+  [_activityView startAnimating];
+}
 
 @end
