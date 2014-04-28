@@ -87,7 +87,7 @@ NSString *kHealthURL = @"https://news.google.com/news/feeds?pz=1&cf=all&ned=us&h
     MWFeedItem *article = self.articles[indexPath.row];
     
     [cell.titleLabel setText:article.title];
-    [cell.summaryLabel setText:article.summary];
+//    [cell.summaryLabel setText:article.summary];
 
     switch ([article.identifier intValue]) {
         case 0:
