@@ -85,9 +85,15 @@ NSString *kHealthURL = @"https://news.google.com/news/feeds?pz=1&cf=all&ned=us&h
     NBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NBTableViewCell"forIndexPath:indexPath];
     
     MWFeedItem *article = self.articles[indexPath.row];
-    
-    [cell.titleLabel setText:article.title];
-//    [cell.summaryLabel setText:article.summary];
+  
+  @try {
+    NSMutableArray *titles = [NSMutableArray arrayWithArray:[article.title componentsSeparatedByString:@"-"]];
+    [titles removeLastObject];
+    [cell.titleLabel setText:[titles componentsJoinedByString:@""]];
+  }
+  @catch (NSException *exception) {
+    [cell.titleLabel setText:@"Error Retrieving Title"];
+  }
 
     switch ([article.identifier intValue]) {
         case 0:
@@ -118,10 +124,13 @@ NSString *kHealthURL = @"https://news.google.com/news/feeds?pz=1&cf=all&ned=us&h
             break;
     }
     
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"MMMM d, yyyy"];
-    NSString *stringFromDate = [formatter stringFromDate:article.date];
-    [cell.dateLabel setText:stringFromDate];
+  @try {
+    [cell.dateLabel setText:[[article.title componentsSeparatedByString:@"-"] lastObject]];
+  }
+  @catch (NSException *exception) {
+    [cell.dateLabel setText:@"Unknown"];
+  }
+
 
     return cell;
 }

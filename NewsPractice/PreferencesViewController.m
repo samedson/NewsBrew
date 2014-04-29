@@ -41,6 +41,15 @@
     self.numEntertainment=0;
     self.numHealth=0;
   
+  self.USslider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.WorldSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.BusinessSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.TechSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.Sports.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.EntertainmentSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.HealthSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  self.ScienceSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  
   _activity_background = [[UIView alloc] init];
   _activity_background.frame = CGRectMake(0, 0, 50, 50);
   _activity_background.center = self.view.center;
@@ -69,9 +78,7 @@
     [self sumSliders];
     [self sumArticles];
     [self setNums];
-  
-    self.view.backgroundColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
-  
+
 }
 
 - (void)didReceiveMemoryWarning
