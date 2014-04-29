@@ -59,17 +59,19 @@
     UINavigationBar *navBar = self.navigationController.navigationBar;
     [navBar setBackgroundImage:[UIImage new]
                  forBarMetrics:UIBarMetricsDefault];
-  
     navBar.shadowImage = [UIImage new];
     navBar.translucent = YES;
     navBar.backgroundColor = [UIColor clearColor];
   
-  [_activity_background setBackgroundColor:[UIColor clearColor]];
-  [_activityView stopAnimating];
+    [_activity_background setBackgroundColor:[UIColor clearColor]];
+    [_activityView stopAnimating];
   
     [self sumSliders];
     [self sumArticles];
     [self setNums];
+  
+    self.view.backgroundColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  
 }
 
 - (void)didReceiveMemoryWarning
