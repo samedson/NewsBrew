@@ -24,7 +24,7 @@
 
 @end
 
-
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 @implementation PreferencesViewController
 - (void)viewDidLoad
@@ -49,6 +49,40 @@
   self.EntertainmentSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
   self.HealthSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
   self.ScienceSlider.maximumTrackTintColor = [UIColor colorWithRed:153/255.0 green:102/255.0 blue:51/255.0 alpha:1.0];
+  
+  NSArray *sliders = @[self.USslider, self.WorldSlider, self.BusinessSlider, self.TechSlider, self.Sports, self.EntertainmentSlider, self.HealthSlider, self.ScienceSlider];
+  
+  if ( ! (IS_WIDESCREEN)) {
+    CGRect frame;
+//    for (int i = 0; i < 8; i++) {
+//      NSLog(@"frams");
+//      frame = ((UISlider *)sliders[i]).frame;
+//      NSLog(@"%f", frame.origin.y);
+//      frame.origin.y -= 10 * i;
+//      NSLog(@"%f", frame.origin.y);
+//      ((UISlider *)sliders[i]).frame = frame;
+//      NSLog(@"%f", ((UISlider *)sliders[i]).frame.origin.y);
+//    }
+    self.EntertainmentSlider.hidden = YES;
+    self.HealthSlider.hidden = YES;
+    //self.Sports.hidden = YES;
+    
+    self.entertainmentLabel.hidden = YES;
+    self.healthLabel.hidden = YES;
+    //self.sportsLabel.hidden = YES;
+    
+    frame = _brewButton.frame;
+    frame.origin.y = 100;
+    [_brewButton setFrame:frame];
+  }
+  
+  UIButton *brewButton = [[UIButton alloc] initWithFrame:CGRectMake(80, 280, 100, 300)];
+  [brewButton addTarget:self action:@selector(brew:) forControlEvents:UIControlEventTouchUpInside];
+  [brewButton setTitle:@"Brew" forState:UIControlStateNormal];
+  [brewButton.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
+  [self.view addSubview:brewButton];
+  
+  NSLog(@"%f", ((UISlider *)sliders[7]).frame.origin.y);
   
   _activity_background = [[UIView alloc] init];
   _activity_background.frame = CGRectMake(0, 0, 50, 50);

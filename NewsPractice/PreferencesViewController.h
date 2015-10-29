@@ -22,6 +22,13 @@
 @property (weak, nonatomic) IBOutlet UISlider *HealthSlider;
 @property (weak, nonatomic) IBOutlet UISlider *TimeSlider;
 
+@property (weak, nonatomic) IBOutlet UILabel *sportsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *entertainmentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *healthLabel;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *brewButton;
+
 - (IBAction)brew:(id)sender;
 
 @property (strong, nonatomic) UIActivityIndicatorView *activityView;
